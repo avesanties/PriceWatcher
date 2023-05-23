@@ -10,9 +10,9 @@ public class ItemParsingDto {
 
   private final String link;
 
-  private final Store store;
+  private final String store;
 
-  public ItemParsingDto(Long id, String name, String link, Store store) {
+  public ItemParsingDto(Long id, String name, String link, String store) {
     this.id = id;
     this.name = name;
     this.link = link;
@@ -31,7 +31,7 @@ public class ItemParsingDto {
     return link;
   }
 
-  public Store getStore() {
+  public String getStore() {
     return store;
   }
 }

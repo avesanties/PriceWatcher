@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component;
 public class ItemMapper {
 
   public ItemParsingDto toItemParsingDto(Item item) {
-    return new ItemParsingDto(item.getId(), item.getName(), item.getLink(), item.getStore());
+    return new ItemParsingDto(item.getId(), item.getName(), item.getLink(), item.getStore().getName());
   }
 }
