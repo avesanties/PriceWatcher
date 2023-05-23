@@ -1,4 +1,4 @@
-package org.avesanties.items_store;
+package org.avesanties.itemsstore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ItemsStoreApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ItemsStoreApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(ItemsStoreApplication.class, args);
+  }
 
 }
