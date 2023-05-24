@@ -1,13 +1,17 @@
 package org.avesanties.parser.dto;
 
-public class ItemDto {
-  private final Long id;
+public final class ItemDto {
+  private Long id;
 
-  private final String name;
+  private String name;
 
-  private final String link;
+  private String link;
 
-  private final String store;
+  private String store;
+
+  public ItemDto() {
+  
+  }
 
   public ItemDto(Long id, String name, String link, String store) {
     this.id = id;
@@ -30,5 +34,10 @@ public class ItemDto {
 
   public String getStore() {
     return store;
+  }
+
+  @Override
+  public String toString() {
+    return "ItemDto [id=" + id + ", name=" + name + ", link=" + link + ", store=" + store + "]";
   }
 }

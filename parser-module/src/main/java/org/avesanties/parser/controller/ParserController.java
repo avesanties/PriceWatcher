@@ -20,9 +20,11 @@ public class ParserController {
   }
 
 
-  @Scheduled(fixedRate = 5, timeUnit = TimeUnit.SECONDS)
+  @Scheduled(fixedRate = 60, timeUnit = TimeUnit.SECONDS)
   public void loadItems() {
     items = ItemLoaderImpl.getItems();
-    System.out.println(items.toString());
+    items.stream().forEach(System.out::println);
   }
+  
+  
 }
